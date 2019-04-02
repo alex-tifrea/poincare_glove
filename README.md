@@ -20,7 +20,7 @@ Their usage is similar, so the following will focus only on GloVe.
 **Training**:
 To train a Vanilla (Euclidean) GloVe model, run the following:
 
-`./run_glove.sh --train --root path/to/root --coocc_file path/to/coocc/file --vocab_file path/to/vocab/file --epochs 50 --workers 20 --restrict_vocab 200000 --lr 0.05 --bias --size 100`
+`./run_glove.sh --train --root path/to/root --coocc_file path/to/coocc/file --vocab_file path/to/vocab/file --epochs 50 --workers 20 --restrict_vocab 200000 --chunksize 1000 --lr 0.05 --bias --size 100`
 
 The root should be the folder that contains the repository folder as well (the
 folder in which the `git clone` command was run). The coocc_file is a binary

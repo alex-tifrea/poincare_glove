@@ -297,7 +297,7 @@ class Glove(SaveLoad):
 
     def prepare_emb_for_eval(self):
         if self.emb_type == "poincare":
-            raise RuntimeError("Not implemented")
+            pass
             # TODO: need to change keyedvectors so that they use agg_vectors for logging the training of Poincare embeddings
             # Note that this method is only invoked when logging the progress during training, and not when running the
             # evaluation of an already trained model.

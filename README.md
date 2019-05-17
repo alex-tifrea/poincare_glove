@@ -105,10 +105,12 @@ the experiments section of our paper.
 ## References
 If you find this code useful for your research, please cite the following paper:
 ```
-@article{poincareglove,
-  Author = {Alexandru Tifrea and Gary Bécigneul and Octavian-Eugen Ganea},
-  Title = {Poincaré GloVe: Hyperbolic Word Embeddings},
-  Year = {2018},
-  Eprint = {arXiv:1810.06546},
+@inproceedings{
+  tifrea2018poincare,
+  title={Poincare Glove: Hyperbolic Word Embeddings},
+  author={Alexandru Tifrea and Gary Becigneul and Octavian-Eugen Ganea},
+  booktitle={International Conference on Learning Representations},
+  year={2019},
+  url={https://openreview.net/forum?id=Ske5r3AqK7},
 }
 ```

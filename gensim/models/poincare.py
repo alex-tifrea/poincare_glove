@@ -1648,7 +1648,7 @@ class LexicalEntailmentEvaluation(object):
             List of matching terms.
 
         """
-        matches = trie.items('%s.' % word)
+        matches = trie.items('%s' % word)
         matching_terms = [''.join(key_chars) for key_chars, value in matches]
         return matching_terms
 

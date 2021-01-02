@@ -1360,7 +1360,7 @@ class ReconstructionEvaluation(object):
         items = set()
         embedding_vocab = embedding.vocab
         relations = defaultdict(set)
-        with smart_open(file_path, 'r') as f:
+        with smart_open(file_path, 'r', encoding="utf-8") as f:
             reader = csv.reader(f, delimiter='\t')
             for row in reader:
                 assert len(row) == 2, 'Hypernym pair has more than two items'
@@ -1473,7 +1473,7 @@ class LinkPredictionEvaluation(object):
         relations = {'known': defaultdict(set), 'unknown': defaultdict(set)}
         data_files = {'known': train_path, 'unknown': test_path}
         for relation_type, data_file in data_files.items():
-            with smart_open(data_file, 'r') as f:
+            with smart_open(data_file, 'r', , encoding="utf-8") as f:
                 reader = csv.reader(f, delimiter='\t')
                 for row in reader:
                     assert len(row) == 2, 'Hypernym pair has more than two items'
@@ -1582,7 +1582,7 @@ class LexicalEntailmentEvaluation(object):
 
         """
         expected_scores = {}
-        with smart_open(filepath, 'r') as f:
+        with smart_open(filepath, 'r', , encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=' ')
             for row in reader:
                 word_1, word_2 = row['WORD1'], row['WORD2']
